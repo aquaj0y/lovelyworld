@@ -4,6 +4,7 @@
 <img width="949" alt="Screenshot 2024-02-16 at 03 49 20" src="https://github.com/aquaj0y/lovelyworld/assets/67973116/75324d90-56fb-4632-8bca-0ec3cfa72714">
 
 ## Wireframe
+<img width="680" alt="Screenshot 2024-02-16 at 04 28 26" src="https://github.com/aquaj0y/lovelyworld/assets/67973116/d9523154-81db-4b51-a3eb-b3317b355cbb">
 
 ## User Story
 As a user, I want to 
