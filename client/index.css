@@ -1,0 +1,139 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+html {
+  font-family: "Universal Condensed", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  /* max-width: 85%; */
+}
+
+.hidden {
+  display: none;
+}
+
+/* Header */
+header {
+  background-color: #01c4cf;
+}
+
+.header-div {
+  display: flex;
+  /* margin-top: 40px; */
+  justify-content: space-between;
+  /* align-content: center; */
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+.logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.logo:link {
+  color: black;
+}
+
+.logo:visited {
+  color: black;
+}
+
+#logo {
+  height: 100px;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
+.search {
+  display: flex;
+  justify-content: flex-end;
+  /* align-self: self-end; */
+  gap: 5px;
+  /* border: solid 1px gray; */
+}
+
+.icon {
+  height: 15px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 35px;
+  padding-right: 60px;
+  list-style: none;
+  gap: 10px;
+}
+
+/* Hero Section */
+.attraction {
+  position: relative;
+}
+
+#hero-title {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  /* This will center the text exactly in the middle */
+  transform: translate(-50%, -50%);
+  color: #8edce6;
+  font-size: 3.5em;
+  text-shadow: #666666 0.5px 0 5px;
+  /* width: 100%; */
+}
+
+/* Swiper */
+.swiper {
+  width: 100%;
+  height: 70vh;
+}
+
+.swiper-slide img {
+  /* height: 100%;
+  object-fit: cover; */
+  width: 100%;
+  height: auto;
+  /* width: 100%; */
+}
+
+/* ///////////////////////////////////////// */
+/* Destination Ideas Section */
+
+.destination-ideas {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: #01c4cf;
+  font-size: 2em;
+  padding: 3rem;
+}
+
+.attraction-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.attraction {
+  width: 30%;
+  /* border: 1px solid gray; */
+}
+
+.attraction-img {
+  width: 300px;
+  border-radius: 10px;
+}

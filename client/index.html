@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="script.js"></script>
+    <title>Lovely World</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-div">
+        <a href="/" class="logo">
+          <span id="logo-text">Lovely</span>
+          <img id="logo" src="/assets/logo.png" />
+          <span id="logo-text">World</span>
+        </a>
+
+        <div class="search-overlay hidden">Hidden div</div>
+        <nav>
+          <ul>
+            <div class="search">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                />
+              </svg>
+              <span>search</span>
+            </div>
+            <li>Destinations</li>
+            <li>Ideas</li>
+            <li><button>My List</button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="attractions">
+        <h2 id="hero-title">Explore the world</h2>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <!-- <div class="swiper-slide">
+              <img
+                src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
+                alt=""
+              />
+            </div> -->
+            <!-- <div class="swiper-slide">
+              <img
+                src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="
+                alt=""
+              />
+            </div> -->
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!-- Attraction Ideas Suggestions-->
+      <section class="destination-ideas">
+        <h2 class="section-title">Destination Ideas</h2>
+        <div class="attraction-container">
+          <!-- <div class="attraction">
+            <img src="" alt="" />
+            <h3>Attraction name</h3>
+            <p class="bold">City name</p>
+            <p>Description</p>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script></script>
+  </body>
+</html>
