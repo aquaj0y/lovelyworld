@@ -9,6 +9,22 @@ const getAllAttractions = async (req, res) => {
     }
 }
 
+const getAttractionById = async (req, res) => {
+  try {
+    const attractionId = req.params.attractionId
+    // const attractionId = "65d6a09db3f0f1ef1556a90d"
+    const attraction = await Attraction.findById(attractionId)
+    console.log(attractionId)
+    if (attraction) {
+      
+      return res.json(attraction)
+    }
+    return res.status(404).send(`Attraction item with the specified ID does not exists`)
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 // const getAttractionById = async (req, res) => {
 //     try {
 //         const { id } = req.params
@@ -77,7 +93,7 @@ const getAllAttractions = async (req, res) => {
 
 module.exports = {
     getAllAttractions,
-    // getAllSmartHomesById,
+    getAttractionById,
     // getSmartHomesByName,
     // createSmartHome,
     // updateSmartHome,

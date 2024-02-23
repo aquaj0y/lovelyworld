@@ -5,7 +5,7 @@ const attractionContainer = document.querySelector('.attraction-container')
 
 // Event Listeners
 addEventListener('load', getAttractionImg(), showAllAttractions())
-// attractionContainer.addEventListener('click',)
+
 
 // Axios Calls
 async function getAllAttractions() {
@@ -61,18 +61,27 @@ async function showAllAttractions() {
     let img1 = el.img1
     let cityId = el.city
     let description = el.description
+    let attractionId = el._id
 
     let city = cityArr.find((city) => city._id === cityId) 
     let cityName = city.name
 
-    attractionContainer.innerHTML += `
-    <div class="attraction">
+    let attractionDiv = document.createElement('div');
+    attractionDiv.className = 'attraction'
+    attractionDiv.dataset.attractionId = attractionId;
+    attractionDiv.innerHTML = `
       <img class="attraction-img" src="${img1}" alt="${name}" />
       <h3>${name}</h3>
       <p class="bold">${cityName}</p>
       <p>${description}</p>
-    </div>
     `
+
+    attractionContainer.appendChild(attractionDiv)
+
+    attractionDiv.addEventListener('click', function () {
+      // window.location.href = `/attraction.html`
+      window.location.href=`/client/attraction-detail.html?attractionId=${this.dataset.attractionId}`
+    })
   })
 }
 

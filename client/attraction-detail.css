@@ -3,10 +3,19 @@ html {
   font-family: "Universal Condensed", sans-serif;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 main {
   border-top: solid 1px gray;
 }
 
 .address-container {
   border-top: solid 1px gray;
+}
+
+.content-img {
+  width: 50%;
 }

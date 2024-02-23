@@ -23,3 +23,11 @@ app.get("/", (req, res) => res.send("This is our landing page!"));
 
 app.get("/attraction", attractionController.getAllAttractions)
 app.get('/city', cityController.getAllCity)
+
+
+
+// app.get('/attraction-detail/:attractionId', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'path_to/attraction-detail.html'));
+// });
+
+app.get('/attraction-detail/:attractionId', attractionController.getAttractionById);
